@@ -1,3 +1,4 @@
+import ModeToggle from "./mode-toggle";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "./ui/navigation-menu";
 
 interface RouteProps {
@@ -34,9 +35,9 @@ const Navbar = () => {
           </NavigationMenuItem>
 
           {/* mobile */}
-          {/* <span className="flex md:hidden">
-            
-          </span> */}
+          <span className="flex md:hidden">
+            <ModeToggle />
+          </span>
         </NavigationMenuList>
       </NavigationMenu>
     </header>
